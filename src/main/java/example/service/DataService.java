@@ -6,10 +6,16 @@ import example.model.Comment;
 import example.model.Post;
 import example.model.User;
 
+import javax.inject.Inject;
 import java.io.IOException;
 import java.util.List;
 
 public class DataService {
+
+    @Inject
+    public DataService() {
+        
+    }
 
     private ObjectMapper jackson = new ObjectMapper();
     private TypeFactory typeFactory = jackson.getTypeFactory();
