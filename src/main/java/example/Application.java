@@ -19,7 +19,10 @@ public class Application {
     public static void main(String ... args) {
         int requiredPosts = args.length > 0 ? Integer.parseInt(args[0]) : 10;
         List<User> popularUsers = new Application().getUsersWithPopularPosts(requiredPosts);
-        logger.info("Popular Users {}", popularUsers);
+        logger.info("Popular Users");
+        for (User popularUser : popularUsers) {
+            logger.info("    {}", popularUser);
+        }
     }
 
     public Application(DataService dataService) {
