@@ -30,7 +30,7 @@ public class Application {
         this(new DataService());
     }
 
-    public List<User> getUsersWithPopularPosts(int requiredPosts) {
+    public List<User> getUsersWithPopularPosts(int requiredComments) {
         List<Comment> comments = dataService.getComments();
         List<Post> posts = dataService.getPosts();
         List<User> users = dataService.getUsers();
