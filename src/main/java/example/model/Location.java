@@ -34,4 +34,12 @@ public class Location {
     public int hashCode() {
         return Objects.hash(lat, lng);
     }
+
+    @Override
+    public String toString() {
+        return "Location{" +
+                "lat='" + lat + '\'' +
+                ", lng='" + lng + '\'' +
+                '}';
+    }
 }

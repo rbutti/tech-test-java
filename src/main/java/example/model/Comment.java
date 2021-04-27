@@ -62,4 +62,15 @@ public class Comment {
     public int hashCode() {
         return Objects.hash(postId, id, name, email, body);
     }
+
+    @Override
+    public String toString() {
+        return "Comment{" +
+                "postId=" + postId +
+                ", id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", body='" + body + '\'' +
+                '}';
+    }
 }

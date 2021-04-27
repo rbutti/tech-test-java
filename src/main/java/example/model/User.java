@@ -88,4 +88,18 @@ public class User {
     public int hashCode() {
         return Objects.hash(id, name, username, email, address, phone, website, company);
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", username='" + username + '\'' +
+                ", email='" + email + '\'' +
+                ", address=" + address +
+                ", phone='" + phone + '\'' +
+                ", website='" + website + '\'' +
+                ", company=" + company +
+                '}';
+    }
 }

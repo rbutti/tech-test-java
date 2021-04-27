@@ -52,4 +52,14 @@ public class Post {
     public int hashCode() {
         return Objects.hash(userId, id, title, body);
     }
+
+    @Override
+    public String toString() {
+        return "Post{" +
+                "userId=" + userId +
+                ", id=" + id +
+                ", title='" + title + '\'' +
+                ", body='" + body + '\'' +
+                '}';
+    }
 }
