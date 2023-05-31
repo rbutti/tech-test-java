@@ -9,4 +9,5 @@ Open ./src/main/java/example/Application.java and implement the getUsersWithPopu
 
 ## Stretch goal
 
+Write terraform script to deploy this project in cloud (AWS preferrably)
 Implement unit tests for the getUsersWithPopularPosts method.
